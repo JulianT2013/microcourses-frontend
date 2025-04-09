@@ -52,5 +52,41 @@
     "hours": 8,
     "fullDescription": "Explore the key principles of user interface and user experience design. You’ll learn how to create wireframes, build user flows, apply color theory and typography effectively, and test your designs with users. This course is perfect for developers or designers wanting to improve how users interact with their apps.",
     "modules": ["Design Basics", "Color & Typography", "Wireframes", "User Testing"]
-  }
+  },
+  {
+    "id": "7",
+    "title": "DevOps Essentials",
+    "image": "/assets/dev-ops.jpg",
+    "description": "Understand the fundamentals of DevOps culture and practices.",
+    "hours": 14,
+    "fullDescription": "This course introduces you to the DevOps mindset and toolchains used for automating infrastructure and deployments. You'll learn about CI/CD pipelines, containerization with Docker, and orchestration with tools like Kubernetes. Ideal for developers looking to bridge the gap between development and operations.",
+    "modules": ["DevOps Principles", "CI/CD Pipelines", "Docker Basics", "Intro to Kubernetes"]
+  },
+  {
+    "id": "8",
+    "title": "Data Visualization with D3.js",
+    "image": "/assets/d3.png",
+    "description": "Learn how to turn raw data into beautiful charts and graphs.",
+    "hours": 9,
+    "fullDescription": "This hands-on course teaches you how to create powerful and interactive data visualizations using the D3.js library. You'll learn how to work with SVGs, scales, axes, and transitions to communicate data-driven insights effectively.",
+    "modules": ["SVG & Shapes", "Scales & Axes", "Bar Charts", "Transitions & Interactivity"]
+  },
+  {
+    "id": "9",
+    "title": "Cybersecurity Fundamentals",
+    "image": "/assets/cybersecurity.jpg",
+    "description": "Learn how to protect systems and data from digital threats.",
+    "hours": 11,
+    "fullDescription": "Gain foundational knowledge in cybersecurity including threat modeling, encryption, authentication, and secure coding practices. This course is essential for any developer or IT professional looking to understand how to defend applications and networks.",
+    "modules": ["Threat Types", "Encryption Basics", "Authentication", "Secure Development"]
+  },
+  {
+    "id": "10",
+    "title": "Intro to Cloud Computing",
+    "image": "/assets/cloud.png",
+    "description": "Get started with the basics of cloud platforms and services.",
+    "hours": 13,
+    "fullDescription": "This introductory course covers the fundamental concepts of cloud computing including IaaS, PaaS, and SaaS models, as well as deployment strategies like public, private, and hybrid cloud. Learn about major providers like AWS, Azure, and Google Cloud, and understand how to architect basic cloud-based solutions.",
+    "modules": ["Cloud Models", "Virtualization", "AWS vs Azure vs GCP", "Cloud Architecture Basics"]
+  }  
 ]
