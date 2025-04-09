@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# MicroCourses Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the frontend for **MicroCourses**, a fictional educational platform that offers a variety of online micro-courses to learners worldwide. The app provides a responsive and modern user interface for browsing available courses and viewing detailed information about each course. It is built using **React** and serves as part of a micro-credential MERN stack assessment.
 
-## Available Scripts
+---
+
+## 🚀 Project Overview
+
+MicroCourses aims to:
+- Display a list of online courses in a visually engaging and responsive layout.
+- Allow users to view more detailed information about each course.
+- Prepare the frontend structure for potential future integration with backend APIs (MongoDB, Express.js, Node.js).
+
+This frontend is built with **Create React App** and emphasizes reusable components, routing, and mobile-first design using CSS Flexbox/Grid.
+
+---
+
+## 🛠️ Getting Started (Local Setup)
+
+### Prerequisites
+Make sure you have **Node.js** and **npm** installed.
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd microcourses-frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📁 Project Structure
+
+```
+microcourses-frontend/
+├── public/
+│   └── assets/                 # Public images accessible by browser
+│
+├── src/
+│   ├── assets/                 # Local image usage (optional)
+│   ├── components/
+│   │   ├── CourseCard.js       # Home page course preview card
+│   │   ├── CourseList.js       # Lists all courses
+│   │   └── CourseDetail.js     # Individual course detail view
+│   ├── data/
+│   │   └── courses.json        # Mock course data used for rendering
+│   ├── App.js                  # Routing setup for home/details
+│   ├── index.js                # Entry point
+│   └── App.css                 # Global styles
+```
+
+---
+
+## 📚 Learn More
+
+- [Create React App Docs](https://create-react-app.dev)
+- [React Router](https://reactrouter.com/en/main)
+- [React Documentation](https://reactjs.org)
+
+---
+
+## 🔧 Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start` — Starts the dev server
+- `npm test` — Launches test runner
+- `npm run build` — Builds app for production
+- `npm run eject` — Ejects app for full control over config
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding! 👨‍💻✨

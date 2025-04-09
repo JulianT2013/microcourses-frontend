@@ -1,5 +1,7 @@
 microcourses-frontend/
 ├── public/
+|   └── assets/
+|   
 ├── src/
 │   ├── assets/                 # Course images
 │   ├── components/
