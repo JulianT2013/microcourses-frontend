@@ -1,0 +1,13 @@
+microcourses-frontend/
+├── public/
+├── src/
+│   ├── assets/                 # Course images
+│   ├── components/
+│   │   ├── CourseCard.js       # Home page course preview card
+│   │   ├── CourseList.js       # Lists all courses
+│   │   └── CourseDetail.js     # Individual course detail view
+│   ├── data/
+│   │   └── courses.json        # Mock course data
+│   ├── App.js                  # Routing setup
+│   ├── index.js
+│   └── App.css

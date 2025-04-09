@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "Intro to Web Development",
+    "image": "/assets/web-dev.png",
+    "description": "Learn the basics of HTML, CSS, and JavaScript.",
+    "hours": 12,
+    "fullDescription": "This beginner-friendly course introduces the foundational building blocks of the web — HTML for structure, CSS for styling, and JavaScript for interactivity. By the end of the course, you’ll be able to build and deploy a fully functional static website from scratch. Ideal for anyone starting a journey into tech or digital design.",
+    "modules": ["HTML Basics", "CSS Styling", "JavaScript Introduction"]
+  },
+  {
+    "id": "2",
+    "title": "React Fundamentals",
+    "image": "/assets/react-fundamentals.png",
+    "description": "Master the React library and build interactive UIs.",
+    "hours": 18,
+    "fullDescription": "Learn how to build modern, reactive user interfaces using React, one of the most popular JavaScript libraries. You'll gain hands-on experience with components, props, state management, and React Hooks. This course also covers routing and introduces concepts for larger application architecture — preparing you to build professional web apps.",
+    "modules": ["JSX", "State & Props", "Hooks", "Routing"]
+  },
+  {
+    "id": "3",
+    "title": "Backend with Node.js",
+    "image": "/assets/nodejs.png",
+    "description": "Learn how to build scalable backend systems using Node.js.",
+    "hours": 20,
+    "fullDescription": "This course teaches you how to build fast, scalable backend systems using Node.js and Express. You'll develop RESTful APIs, understand middleware and routing, handle asynchronous code, and connect your app to databases. By the end, you'll create a full-stack-ready backend application and gain real-world backend dev experience.",
+    "modules": ["Node Basics", "Express Framework", "REST APIs", "Middleware"]
+  },
+  {
+    "id": "4",
+    "title": "Intro to Python Programming",
+    "image": "/assets/python.jpg",
+    "description": "An introduction to programming with Python.",
+    "hours": 15,
+    "fullDescription": "Learn Python from the ground up — no prior experience required. This course focuses on the fundamentals of programming using Python’s simple, readable syntax. You’ll cover everything from variables and loops to functions and file operations. By the end, you’ll have built your own mini projects and scripts.",
+    "modules": ["Variables & Data Types", "Loops & Conditions", "Functions", "Files"]
+  },
+  {
+    "id": "5",
+    "title": "Databases with MongoDB",
+    "image": "/assets/mongodb.png",
+    "description": "Understand NoSQL databases using MongoDB.",
+    "hours": 10,
+    "fullDescription": "Dive into modern NoSQL data storage using MongoDB. Learn to design schemas, store and retrieve data using CRUD operations, and write advanced queries using aggregation pipelines. You’ll also explore real-world data modeling practices and connect MongoDB to backend applications using Mongoose.",
+    "modules": ["CRUD Operations", "Schemas", "Aggregation", "Mongoose"]
+  },
+  {
+    "id": "6",
+    "title": "UI/UX Design Principles",
+    "image": "/assets/ux-ui-design.png",
+    "description": "Create intuitive and beautiful user interfaces.",
+    "hours": 8,
+    "fullDescription": "Explore the key principles of user interface and user experience design. You’ll learn how to create wireframes, build user flows, apply color theory and typography effectively, and test your designs with users. This course is perfect for developers or designers wanting to improve how users interact with their apps.",
+    "modules": ["Design Basics", "Color & Typography", "Wireframes", "User Testing"]
+  }
+]
