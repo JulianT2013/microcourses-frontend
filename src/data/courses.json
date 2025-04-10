@@ -64,11 +64,11 @@
   },
   {
     "id": "8",
-    "title": "Data Visualization with D3.js",
+    "title": "Data Visualisation with D3.js",
     "image": "/assets/d3.png",
     "description": "Learn how to turn raw data into beautiful charts and graphs.",
     "hours": 9,
-    "fullDescription": "This hands-on course teaches you how to create powerful and interactive data visualizations using the D3.js library. You'll learn how to work with SVGs, scales, axes, and transitions to communicate data-driven insights effectively.",
+    "fullDescription": "This hands-on course teaches you how to create powerful and interactive data visualisations using the D3.js library. You'll learn how to work with SVGs, scales, axes, and transitions to communicate data-driven insights effectively.",
     "modules": ["SVG & Shapes", "Scales & Axes", "Bar Charts", "Transitions & Interactivity"]
   },
   {
@@ -87,6 +87,6 @@
     "description": "Get started with the basics of cloud platforms and services.",
     "hours": 13,
     "fullDescription": "This introductory course covers the fundamental concepts of cloud computing including IaaS, PaaS, and SaaS models, as well as deployment strategies like public, private, and hybrid cloud. Learn about major providers like AWS, Azure, and Google Cloud, and understand how to architect basic cloud-based solutions.",
-    "modules": ["Cloud Models", "Virtualization", "AWS vs Azure vs GCP", "Cloud Architecture Basics"]
+    "modules": ["Cloud Models", "Virtualisation", "AWS vs Azure vs GCP", "Cloud Architecture Basics"]
   }  
 ]
