@@ -7,7 +7,9 @@ microcourses-frontend/
 │   ├── components/
 │   │   ├── CourseCard.js       # Home page course preview card
 │   │   ├── CourseList.js       # Lists all courses
-│   │   └── CourseDetail.js     # Individual course detail view
+│   │   ├── CourseDetail.js     # Individual course detail view
+|   |   ├── Header.jsx          # Site Header
+|   |   └── styles.css          # Stylesheet
 │   ├── data/
 │   │   └── courses.json        # Mock course data
 │   ├── App.js                  # Routing setup
