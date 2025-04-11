@@ -24,11 +24,12 @@ const CourseDetail = () => {
                     <li key={i}>{module}</li>
                 ))}
             </ul>
-            <button className="enroll-button">Enroll Now</button>
-            <button onClick={() => navigate('/')} className='back-button'>
-                ← Back to Courses
-            </button>
-
+            <div className="button-row">
+                <button className="enroll-button">Enroll Now</button>
+                <button onClick={() => navigate('/')} className='back-button'>
+                    ← Back to Courses
+                </button>
+            </div>
         </div>
     );
 };

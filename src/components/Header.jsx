@@ -4,9 +4,14 @@ import './styles.css';
 
 const Header = () => {
   const [theme, setTheme] = useState('light');
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
+    const handleResize = () => setIsMobile(window.innerWidth <= 600);
+    handleResize(); // Set initially
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -21,6 +26,13 @@ const Header = () => {
           <span>Micro</span>
           <span className="title-courses">Courses</span>
         </Link>
+        <button
+          className="toggle-btn"
+          onClick={toggleTheme}
+          title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+        >
+          {isMobile ? (theme === 'light' ? '🌙' : '☀️') : (theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode')}
+        </button>
       </div>
     </header>
   );
