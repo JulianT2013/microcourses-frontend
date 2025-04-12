@@ -11,7 +11,7 @@ const CourseCard = ({ course }) => {
         <h3>{course.title}</h3>
         <p>{course.description}</p>
         <p><strong>Hours:</strong> {course.hours}</p>
-        <button className='details-button'>View Details</button>
+        <button type="button" className='details-button btn btn-primary'>View Details</button>
       </div>
     </div>
   );

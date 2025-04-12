@@ -27,7 +27,7 @@ const Header = () => {
           <span className="title-courses">Courses</span>
         </Link>
         <button
-          className="toggle-btn"
+          className="toggle-btn btn btn-dark"
           onClick={toggleTheme}
           title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
         >

@@ -25,9 +25,10 @@ const CourseDetail = () => {
                 ))}
             </ul>
             <div className="button-row">
-                <button className="enroll-button">Enroll Now</button>
-                <button onClick={() => navigate('/')} className='back-button'>
-                    ← Back to Courses
+                <button type="button" className="enroll-button btn btn-primary">Enroll Now</button>
+                <button type="button" onClick={() => navigate('/')} className='back-button btn btn-secondary'>
+                    <span className="back-text-full">← Back to Courses</span>
+                    <span className="back-text-short">←Back</span>
                 </button>
             </div>
         </div>
