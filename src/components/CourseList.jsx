@@ -3,6 +3,7 @@ import courses from '../data/courses.json';
 import CourseCard from './CourseCard';
 import './styles.css';
 
+
 const CourseList = () => {
   return (
     <div className="course-list">

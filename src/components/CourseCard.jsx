@@ -10,8 +10,8 @@ const CourseCard = ({ course }) => {
       <div className="course-content">
         <h3>{course.title}</h3>
         <p>{course.description}</p>
-        <p><strong>Hours:</strong> {course.hours}</p>
-        <button type="button" className='details-button btn btn-primary'>View Details</button>
+        <p className='small'>⏱ {course.hours} hrs</p>
+        <button className='details-button btn btn-primary'>View Details</button>
       </div>
     </div>
   );
