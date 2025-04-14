@@ -164,34 +164,12 @@ body[data-theme='dark'] {
   margin-top: 1rem;
   margin-right: 1rem;
   text-align: center;
-  /* color: #fff; */
 }
 
-/*
-.details-button,
-.enrol-button {
-   background-color: #007bff;
-}
-*/
 .back-button,
 .details-button {
   margin-right: 0;
 }
-
-/*
-.back-button {
-  background: #6c757d;
-}
-
-.back-button:hover {
-  background: #343a40;
-}
-
-.details-button:hover,
-.enrol-button:hover {
-  background-color: #0056b3;
-}
-*/
 
 .back-text-short {
   display: none;

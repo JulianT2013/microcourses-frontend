@@ -47,7 +47,8 @@ Make sure you have **Node.js** and **npm** installed.
 ```
 microcourses-frontend/
 ├── public/
-│   └── assets/                 # Public images accessible by browser
+│   ├── assets/                 # Public images accessible by browser
+|   └── index.html              # Entry point 
 │
 ├── src/
 │   ├── assets/                 # Local image usage (optional)
