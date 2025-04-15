@@ -18,7 +18,7 @@ const Header = () => {
 
   const isDark = theme === 'dark';
   const toggleTheme = () => setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
-  const toggleBtnClass = `toggle-btn btn ${isDark ? 'btn-light' : 'btn-outline-dark'}`;
+  const toggleBtnClass = `toggle-button btn ${isDark ? 'btn-outline-light' : 'btn-dark'}`;
 
   return (
     <header className="site-header fixed">

@@ -62,7 +62,7 @@ body[data-theme='dark'] {
 
 .header-content {
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: calc(5 * 300px + 4 * 20px);
   margin: 0 auto;
   flex-wrap: wrap;
   padding-left: 0.5rem;
@@ -164,6 +164,7 @@ body[data-theme='dark'] {
   margin-top: 1rem;
   margin-right: 1rem;
   text-align: center;
+  /* color: #fff; */
 }
 
 .back-button,
@@ -281,7 +282,9 @@ body[data-theme='dark'] {
   .back-text-full {
     display: none;
   }
-  .toggle-btn {
+  .toggle-button {
     align-self: flex-end;
+    background: none;
+    border: none;
   }
 }
