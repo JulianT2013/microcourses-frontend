@@ -58,13 +58,43 @@ microcourses-fullstack/
 - `CourseList`: Calls `GET /courses` and passes course data to cards.
 - `CourseDetail`: Fetches individual course via `GET /courses/:id` and displays all fields.
 - `Header`: Manages theme toggle and branding.
-- `api.js`: Axios abstraction layer.
+- `api.js`: Axios abstraction layer (see below).
 
 ### Express + MongoDB (Backend)
 - `GET /courses`: Fetch all courses from MongoDB.
 - `GET /courses/:id`: Fetch a single course by ID.
 - `POST /courses`: Create new course.
 - `server.js`: Supports switching between local and Atlas MongoDB via `.env` and `USE_LOCAL` flag.
+
+---
+---
+
+## 📦 Why Axios Was Included
+
+Although the use of Axios was not explicitly required in the project assessment, it was deliberately chosen and integrated into the frontend to improve the efficiency and clarity of API interactions.
+
+### ✅ Reasoning Behind Axios Integration
+
+| Benefit | Explanation |
+|--------|-------------|
+| **1. Simplified Syntax** | Axios provides a cleaner and more concise syntax compared to the native `fetch` API. For example, handling JSON response parsing is automatic (`res.data`) instead of manual (`res.json()`). |
+| **2. Built-in Error Handling** | Axios makes it easier to catch HTTP errors and inspect response status codes and headers. |
+| **3. Request Configuration** | It simplifies setting base URLs, headers, timeouts, and interceptors — which is especially helpful when connecting to different environments (local, cloud, etc.). |
+| **4. Consistency** | Using a dedicated HTTP client promotes modularity and a uniform pattern across all API calls. |
+| **5. Scalability** | Axios enables future enhancements like adding interceptors for authentication tokens or global error handling logic. |
+
+### 📁 Implementation Location
+
+Axios is abstracted through a helper file:  
+`frontend/src/api.js`
+
+```js
+import axios from 'axios';
+
+const API_BASE_URL = 'http://localhost:5000';
+
+export const fetchCourses = () => axios.get(`${API_BASE_URL}/courses`);
+export const fetchCourseById = (id) => axios.get(`${API_BASE_URL}/courses/${id}`);
 
 ---
 
