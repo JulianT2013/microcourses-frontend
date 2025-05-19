@@ -1,91 +1,104 @@
-# MicroCourses Frontend
 
-This project is the frontend for **MicroCourses**, a fictional educational platform that offers a variety of online micro-courses to learners worldwide. The app provides a responsive and modern user interface for browsing available courses and viewing detailed information about each course. It is built using **React** and serves as part of a micro-credential MERN stack assessment.
+# 🔗 MicroCourses — Full Stack Fork (Frontend + Backend Integration)
 
----
+## 🧭 Project Overview
 
-## 🚀 Project Overview
+This fork combines the **Component 1 frontend (React)** and **Component 2 backend (Node.js + Express + MongoDB)** into a fully integrated microlearning platform.
 
-MicroCourses aims to:
-- Display a list of online courses in a visually engaging and responsive layout.
-- Allow users to view more detailed information about each course.
-- Prepare the frontend structure for potential future integration with backend APIs (MongoDB, Express.js, Node.js).
+The goal is to provide a responsive, theme-aware, and real-time connected UI for exploring and managing online course content.
 
-This frontend is built with **Create React App** and emphasizes reusable components, routing, and mobile-first design using CSS Flexbox/Grid.
+> Includes custom light/dark mode toggle, Bootstrap styling, dynamic routing, and MongoDB Atlas or local DB support.
 
 ---
 
-## 🛠️ Getting Started (Local Setup)
+## 🚀 Getting Started
 
-### Prerequisites
-Make sure you have **Node.js** and **npm** installed.
-
-### Installation Steps
-
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
-   cd microcourses-frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 📁 Project Structure
+### 📁 Folder Structure
 
 ```
-microcourses-frontend/
-├── public/
-│   ├── assets/                 # Public images accessible by browser
-|   └── index.html              # Entry point 
+microcourses-fullstack/
+├── frontend/              # React app
+│   ├── src/
+│   │   ├── components/    # CourseCard, CourseList, CourseDetail, Header
+│   │   ├── data/          # Optional JSON mock data
+│   │   ├── App.js         # Routing setup
+│   │   └── index.js       # App entry point
+│   └── public/
+│       └── assets/        # Logo + images
 │
-├── src/
-│   ├── assets/                 # Local image usage (optional)
-│   ├── components/
-│   │   ├── CourseCard.js       # Home page course preview card
-│   │   ├── CourseList.js       # Lists all courses
-│   │   ├── CourseDetail.js     # Individual course detail view
-|   |   ├── Header.jsx          # Site Header 
-│   │   └── styles.css          # stylesheet
-|   |
-│   ├── data/
-│   │   └── courses.json        # Mock course data used for rendering
-|   |
-│   ├── App.js                  # Routing setup for home/details
-│   ├── index.js                # Entry point
-│   └── App.css                 # Global styles
+├── backend/               # Express server
+│   ├── routes/            # courseRoutes.js
+│   ├── models/            # Course.js (Mongoose schema)
+│   ├── .env               # Mongo credentials
+│   ├── server.js          # Server entry point
+│   └── package.json
 ```
 
 ---
 
-## 📚 Learn More
+## 🧩 Code Overview
 
-- [Create React App Docs](https://create-react-app.dev)
-- [React Router](https://reactrouter.com/en/main)
-- [React Documentation](https://reactjs.org)
-
----
-
-## 🔧 Available Scripts
-
-In the project directory, you can run:
-
-- `npm start` — Starts the dev server
-- `npm test` — Launches test runner
-- `npm run build` — Builds app for production
-- `npm run eject` — Ejects app for full control over config
+| File                      | Description |
+|---------------------------|-------------|
+| `frontend/src/components/CourseCard.js` | Renders individual course as a card layout, links to details |
+| `frontend/src/components/CourseList.js` | Maps all fetched courses into cards |
+| `frontend/src/components/CourseDetail.js` | Fetches course by ID and renders full info |
+| `frontend/src/components/Header.js` | Persistent header with dark/light toggle |
+| `frontend/src/api.js`    | Axios wrapper for backend API requests |
+| `backend/routes/courseRoutes.js` | Express routes for GET/POST endpoints |
+| `backend/models/Course.js` | Mongoose schema for course structure |
+| `backend/server.js`      | Initializes Express, connects to MongoDB, mounts routes |
 
 ---
 
-Happy coding! 👨‍💻✨
+## ⚙️ Technical Details
+
+### React (Frontend)
+- `CourseCard`: Receives a `course` object and routes to `CourseDetail` using React Router.
+- `CourseList`: Calls `GET /courses` and passes course data to cards.
+- `CourseDetail`: Fetches individual course via `GET /courses/:id` and displays all fields.
+- `Header`: Manages theme toggle and branding.
+- `api.js`: Axios abstraction layer.
+
+### Express + MongoDB (Backend)
+- `GET /courses`: Fetch all courses from MongoDB.
+- `GET /courses/:id`: Fetch a single course by ID.
+- `POST /courses`: Create new course.
+- `server.js`: Supports switching between local and Atlas MongoDB via `.env` and `USE_LOCAL` flag.
+
+---
+
+## 🧠 Problem-Solving
+
+- **Data Sync**: Transitioned from local JSON to live backend data by replacing static import with API fetch using Axios.
+- **Routing Conflicts**: Aligned frontend route paths (`/course/:id`) with backend expectations (`/courses/:id`) and updated all navigation accordingly.
+- **Theme Styles**: Extended Bootstrap card and button classes to react to data-theme and variables.
+- **Missing Images/Data**: Added fallback support for optional fields like `image`, `instructor`, or `duration`.
+
+---
+
+## 🌟 Achievements
+
+- 🎯 Seamless integration of UI and backend with persistent styling
+- 🌗 Light/Dark mode support tied to body data attribute and updated dynamically
+- 🌐 Switchable backend (local vs. MongoDB Atlas)
+- 🔁 Frontend fully refactored to pull from live data source
+- 🔍 Robust routing and fallback states for loading / missing data
+
+---
+
+## 🔧 Setup Notes
+
+- Start MongoDB locally (`mongod`) or ensure Atlas credentials are correct
+- Use two terminals:
+  ```bash
+  # Terminal 1
+  cd backend
+  npm run dev
+
+  # Terminal 2
+  cd frontend
+  npm start
+  ```
+
+> Make sure CORS is enabled in the backend, and frontend API base URL is correct in `api.js`.
