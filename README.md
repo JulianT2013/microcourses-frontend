@@ -47,7 +47,7 @@ microcourses-fullstack/
 | `frontend/src/api.js`    | Axios wrapper for backend API requests |
 | `backend/routes/courseRoutes.js` | Express routes for GET/POST endpoints |
 | `backend/models/Course.js` | Mongoose schema for course structure |
-| `backend/server.js`      | Initializes Express, connects to MongoDB, mounts routes |
+| `backend/server.js`      | Initialises Express, connects to MongoDB, mounts routes |
 
 ---
 
@@ -65,35 +65,6 @@ microcourses-fullstack/
 - `GET /courses/:id`: Fetch a single course by ID.
 - `POST /courses`: Create new course.
 - `server.js`: Supports switching between local and Atlas MongoDB via `.env` and `USE_LOCAL` flag.
-
----
-
-## 📦 Why Axios Was Included
-
-Although the use of Axios was not explicitly required in the project assessment, it was deliberately chosen and integrated into the frontend to improve the efficiency and clarity of API interactions.
-
-### ✅ Reasoning Behind Axios Integration
-
-| Benefit | Explanation |
-|--------|-------------|
-| **1. Simplified Syntax** | Axios provides a cleaner and more concise syntax compared to the native `fetch` API. For example, handling JSON response parsing is automatic (`res.data`) instead of manual (`res.json()`). |
-| **2. Built-in Error Handling** | Axios makes it easier to catch HTTP errors and inspect response status codes and headers. |
-| **3. Request Configuration** | It simplifies setting base URLs, headers, timeouts, and interceptors — which is especially helpful when connecting to different environments (local, cloud, etc.). |
-| **4. Consistency** | Using a dedicated HTTP client promotes modularity and a uniform pattern across all API calls. |
-| **5. Scalability** | Axios enables future enhancements like adding interceptors for authentication tokens or global error handling logic. |
-
-### 📁 Implementation Location
-
-Axios is abstracted through a helper file:  
-`frontend/src/api.js`
-
-```js
-import axios from 'axios';
-
-const API_BASE_URL = 'http://localhost:5000';
-
-export const fetchCourses = () => axios.get(`${API_BASE_URL}/courses`);
-export const fetchCourseById = (id) => axios.get(`${API_BASE_URL}/courses/${id}`);
 
 ---
 
@@ -131,3 +102,35 @@ export const fetchCourseById = (id) => axios.get(`${API_BASE_URL}/courses/${id}`
   ```
 
 > Make sure CORS is enabled in the backend, and frontend API base URL is correct in `api.js`.
+
+---
+
+## 📦 Why Axios Was Included
+
+Although the use of Axios was not explicitly required in the project assessment, it was deliberately chosen and integrated into the frontend to improve the efficiency and clarity of API interactions.
+
+### ✅ Reasoning Behind Axios Integration
+
+| Benefit | Explanation |
+|--------|-------------|
+| **1. Simplified Syntax** | Axios provides a cleaner and more concise syntax compared to the native `fetch` API. For example, handling JSON response parsing is automatic (`res.data`) instead of manual (`res.json()`). |
+| **2. Built-in Error Handling** | Axios makes it easier to catch HTTP errors and inspect response status codes and headers. |
+| **3. Request Configuration** | It simplifies setting base URLs, headers, timeouts, and interceptors — which is especially helpful when connecting to different environments (local, cloud, etc.). |
+| **4. Consistency** | Using a dedicated HTTP client promotes modularity and a uniform pattern across all API calls. |
+| **5. Scalability** | Axios enables future enhancements like adding interceptors for authentication tokens or global error handling logic. |
+
+### 📁 Implementation Location
+
+Axios is abstracted through a helper file:  
+`frontend/src/api.js`
+
+```js
+import axios from 'axios';
+
+const API_BASE_URL = 'http://localhost:5000';
+
+export const fetchCourses = () => axios.get(`${API_BASE_URL}/courses`);
+export const fetchCourseById = (id) => axios.get(`${API_BASE_URL}/courses/${id}`);
+```
+
+> 🧠 This keeps components clean and allows for one-point maintenance if API structure changes.
