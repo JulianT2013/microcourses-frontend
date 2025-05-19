@@ -4,20 +4,16 @@ import CourseList from './components/CourseList';
 import CourseDetail from './components/CourseDetail';
 import Header from './components/Header';
 
-
-
-function App() {
-  return (
-    <Router>
+const App = () => (
+  <Router>
+    <div className="app-container">
       <Header />
-      <div className="app-container">
-        <Routes>
-          <Route path="/" element={<CourseList />} />
-          <Route path="/course/:id" element={<CourseDetail />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
+      <Routes>
+        <Route path="/" element={<CourseList />} />
+        <Route path="/course/:id" element={<CourseDetail />} />
+      </Routes>
+    </div>
+  </Router>
+);
 
 export default App;

@@ -169,7 +169,7 @@ body[data-theme='dark'] {
 
 .back-button,
 .details-button {
-  margin-right: 0;
+  margin-right: 0.5rem;
 }
 
 .back-text-short {
@@ -226,7 +226,7 @@ body[data-theme='dark'] {
   .enrol-button,
   .back-button {
     width: 48%;
-    margin-right: 0;
+
   }
 
   .button-row {
@@ -262,7 +262,6 @@ body[data-theme='dark'] {
   .enrol-button,
   .back-button {
     width: 48%;
-    margin-right: 0;
   }
 
   back-text-short {
