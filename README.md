@@ -67,7 +67,6 @@ microcourses-fullstack/
 - `server.js`: Supports switching between local and Atlas MongoDB via `.env` and `USE_LOCAL` flag.
 
 ---
----
 
 ## 📦 Why Axios Was Included
 
