@@ -1,17 +1,16 @@
-# MicroCourses Frontend
+# MicroCourses — Project Overview (Front-end)
 
-This project is the frontend for **MicroCourses**, a fictional educational platform that offers a variety of online micro-courses to learners worldwide. The app provides a responsive and modern user interface for browsing available courses and viewing detailed information about each course. It is built using **React** and serves as part of a micro-credential MERN stack assessment.
+## 🧭 Project Goals
+The MicroCourses platform aims to deliver an intuitive and efficient user experience for:
+- 🧭 Browsing a catalog of courses
+- 📘 Accessing rich, detailed course information
+- 🎯 Supporting future enrollment workflows
 
----
+As the platform experiences growth, there's a pressing need for a modern, scalable, and responsive web application that effectively showcases their course offerings. 
 
-## 🚀 Project Overview
+> 📝 **Note:** While light/dark mode support and Bootstrap integration were not explicitly required in the project brief, they were implemented to enhance the user experience, accessibility, and maintainability — aligning with best practices for modern, user-centric web applications.
 
-MicroCourses aims to:
-- Display a list of online courses in a visually engaging and responsive layout.
-- Allow users to view more detailed information about each course.
-- Prepare the frontend structure for potential future integration with backend APIs (MongoDB, Express.js, Node.js).
-
-This frontend is built with **Create React App** and emphasizes reusable components, routing, and mobile-first design using CSS Flexbox/Grid.
+**Git repository** can be found at: https://github.com/JulianT2013/microcourses-frontend
 
 ---
 
@@ -42,6 +41,14 @@ Make sure you have **Node.js** and **npm** installed.
 
 ---
 
+## 🧩 Code Overview
+
+| File | Purpose |
+|------|---------|
+| `CourseCard.js` | Displays a single course using a Flexbox. Dynamically styles content based on theme (light/dark). |
+| `CourseList.js` | Renders all available courses in a responsive layout by mapping over course data and rendering `CourseCard` components. |
+| `bootstrap.min.css` | Linked in `index.html`. Provides responsive layout styling, enabling a 5-column layout using Flexbox. Includes overrides to align Bootstrap with project theme variables. |
+
 ## 📁 Project Structure
 
 ```
@@ -66,26 +73,42 @@ microcourses-frontend/
 │   ├── index.js                # Entry point
 │   └── App.css                 # Global styles
 ```
+---
+
+## ⚙️ Technical Details
+
+### CourseCard.js
+- **Inputs**: `course` object (`id`, `title`, `description`, `hours`, `image`)
+- **Behaviour**: Dynamically styles based on current theme, navigates to course details, renders Flexbox card
+- **Output**: A fully styled, interactive course preview
+
+### CourseList.js
+- **Inputs**: Static course data from JSON
+- **Behaviour**: Iterates through course list and renders `CourseCard` for each
+- **Output**: Full course listing, responsive and visually structured
+
+### bootstrap.min.css
+- Custom Flexbox grid to simulate 5-column layout across screen sizes (300px width cards)
+- **Theme integration:** CSS variables aligned to `data-theme` for light/dark support
+- Implemented Bootstrap buttons (.btn, .btn-primary, .btn-secondary, .btn-dark, .btn-light)
 
 ---
 
-## 📚 Learn More
+## 🛠️ Problem-Solving
 
-- [Create React App Docs](https://create-react-app.dev)
-- [React Router](https://reactrouter.com/en/main)
-- [React Documentation](https://reactjs.org)
+### 1. Bootstrap doesn’t support 5-column grids
+- 🔍 **Issue**: Bootstrap only supports 1-4-6-12 columns
+- ✅ **Fix**: Retained custom Flexbox layout and implemented media queries to simulate 5 evenly spaced cards.
 
+### 2. Card responsiveness across devices
+- **🔍 Issue:** Course cards displayed inconsistently across screen sizes and devices
+- **✅ Fix:** Refined layout styles with media queries and tested in responsive design mode to ensure cards resized and aligned                consistently across breakpoints
 ---
 
-## 🔧 Available Scripts
+## 🌟 Achievements
 
-In the project directory, you can run:
-
-- `npm start` — Starts the dev server
-- `npm test` — Launches test runner
-- `npm run build` — Builds app for production
-- `npm run eject` — Ejects app for full control over config
-
----
-
-Happy coding! 👨‍💻✨
+- 🧱 Created modular, reusable components (CourseCard, CourseList) that scale well
+- 📱 Fully mobile-first, with elegant responsiveness down to 320px screen widths
+- 🚀 Maintained Bootstrap styling consistency while integrating a custom responsive layout
+- 🌗 Enabled live theme switching with dynamic class assignments 
+  - Light/Dark toggle = user-friendly and accessible
