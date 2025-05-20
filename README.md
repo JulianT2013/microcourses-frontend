@@ -89,17 +89,20 @@ microcourses-fullstack/
 
 ## 🔧 Setup Notes
 
-- Start MongoDB locally (`mongod`) or ensure Atlas credentials are correct
-- Use two terminals:
-  ```bash
-  # Terminal 1
-  cd backend
-  npm run dev
+1. Follow instructions to set up the **Frontend** (`frontend/README.md` or Component 1 guide).  
+2. Follow instructions to set up the **Backend** (`backend/README.md` or Component 2 guide).
+3. Start MongoDB locally (`mongod`) or ensure Atlas credentials are correct.
+4. Use two terminals:
 
-  # Terminal 2
-  cd frontend
-  npm start
-  ```
+```bash
+# Terminal 1
+cd backend
+npm run dev
+
+# Terminal 2
+cd frontend
+npm start
+```
 
 > Make sure CORS is enabled in the backend, and frontend API base URL is correct in `api.js`.
 
