@@ -48,7 +48,7 @@ const CourseDetail = () => {
           <span className="back-text-full">← Back to Courses</span>
           <span className="back-text-short">Back</span>
         </button>
-        <button className="enrol-button btn btn-primary">Enroll</button>
+        <button className="enrol-button btn btn-primary">Enrol</button>
       </div>
     </div>
   );

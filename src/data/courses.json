@@ -6,7 +6,9 @@
     "description": "Learn the basics of HTML, CSS, and JavaScript.",
     "hours": 12,
     "fullDescription": "This beginner-friendly course introduces the foundational building blocks of the web — HTML for structure, CSS for styling, and JavaScript for interactivity. By the end of the course, you’ll be able to build and deploy a fully functional static website from scratch. Ideal for anyone starting a journey into tech or digital design.",
-    "modules": ["HTML Basics", "CSS Styling", "JavaScript Introduction"]
+    "modules": ["HTML Basics", "CSS Styling", "JavaScript Introduction"],
+    "instructor": "John Smith",
+    "category": "Web Development"
   },
   {
     "id": "2",
@@ -15,7 +17,9 @@
     "description": "Master the React library and build interactive UIs.",
     "hours": 18,
     "fullDescription": "Learn how to build modern, reactive user interfaces using React, one of the most popular JavaScript libraries. You'll gain hands-on experience with components, props, state management, and React Hooks. This course also covers routing and introduces concepts for larger application architecture — preparing you to build professional web apps.",
-    "modules": ["JSX", "State & Props", "Hooks", "Routing"]
+    "modules": ["JSX", "State & Props", "Hooks", "Routing"],
+    "instructor": "Jane Doe",
+    "category": "Front-end Development"
   },
   {
     "id": "3",
@@ -24,7 +28,9 @@
     "description": "Learn how to build scalable backend systems using Node.js.",
     "hours": 20,
     "fullDescription": "This course teaches you how to build fast, scalable backend systems using Node.js and Express. You'll develop RESTful APIs, understand middleware and routing, handle asynchronous code, and connect your app to databases. By the end, you'll create a full-stack-ready backend application and gain real-world backend dev experience.",
-    "modules": ["Node Basics", "Express Framework", "REST APIs", "Middleware"]
+    "modules": ["Node Basics", "Express Framework", "REST APIs", "Middleware"],
+    "instructor": "Carlos Rodriguez",
+    "category": "Back-end Development"
   },
   {
     "id": "4",
@@ -33,7 +39,9 @@
     "description": "An introduction to programming with Python.",
     "hours": 15,
     "fullDescription": "Learn Python from the ground up — no prior experience required. This course focuses on the fundamentals of programming using Python’s simple, readable syntax. You’ll cover everything from variables and loops to functions and file operations. By the end, you’ll have built your own mini projects and scripts.",
-    "modules": ["Variables & Data Types", "Loops & Conditions", "Functions", "Files"]
+    "modules": ["Variables & Data Types", "Loops & Conditions", "Functions", "Files"],
+    "instructor": "Norman Oswald",
+    "category": "Programming Basics"
   },
   {
     "id": "5",
@@ -42,7 +50,9 @@
     "description": "Understand NoSQL databases using MongoDB.",
     "hours": 10,
     "fullDescription": "Dive into modern NoSQL data storage using MongoDB. Learn to design schemas, store and retrieve data using CRUD operations, and write advanced queries using aggregation pipelines. You’ll also explore real-world data modeling practices and connect MongoDB to backend applications using Mongoose.",
-    "modules": ["CRUD Operations", "Schemas", "Aggregation", "Mongoose"]
+    "modules": ["CRUD Operations", "Schemas", "Aggregation", "Mongoose"],
+    "instructor": "Harry Mongod",
+    "category": "Databases"
   },
   {
     "id": "6",
@@ -51,7 +61,9 @@
     "description": "Create intuitive and beautiful user interfaces.",
     "hours": 8,
     "fullDescription": "Explore the key principles of user interface and user experience design. You’ll learn how to create wireframes, build user flows, apply color theory and typography effectively, and test your designs with users. This course is perfect for developers or designers wanting to improve how users interact with their apps.",
-    "modules": ["Design Basics", "Color & Typography", "Wireframes", "User Testing"]
+    "modules": ["Design Basics", "Color & Typography", "Wireframes", "User Testing"],
+    "instructor": "Des Igner",
+    "category": "Design & UX"
   },
   {
     "id": "7",
@@ -60,7 +72,9 @@
     "description": "Understand the fundamentals of DevOps culture and practices.",
     "hours": 14,
     "fullDescription": "This course introduces you to the DevOps mindset and toolchains used for automating infrastructure and deployments. You'll learn about CI/CD pipelines, containerization with Docker, and orchestration with tools like Kubernetes. Ideal for developers looking to bridge the gap between development and operations.",
-    "modules": ["DevOps Principles", "CI/CD Pipelines", "Docker Basics", "Intro to Kubernetes"]
+    "modules": ["DevOps Principles", "CI/CD Pipelines", "Docker Basics", "Intro to Kubernetes"],
+    "instructor": "Devin O'perations",
+    "category": "DevOps & Development"
   },
   {
     "id": "8",
@@ -69,7 +83,9 @@
     "description": "Learn how to turn raw data into beautiful charts and graphs.",
     "hours": 9,
     "fullDescription": "This hands-on course teaches you how to create powerful and interactive data visualisations using the D3.js library. You'll learn how to work with SVGs, scales, axes, and transitions to communicate data-driven insights effectively.",
-    "modules": ["SVG & Shapes", "Scales & Axes", "Bar Charts", "Transitions & Interactivity"]
+    "modules": ["SVG & Shapes", "Scales & Axes", "Bar Charts", "Transitions & Interactivity"],
+    "instructor": "Dan Rather",
+    "category": "Data Visualisation"
   },
   {
     "id": "9",
@@ -78,7 +94,9 @@
     "description": "Learn how to protect systems and data from digital threats.",
     "hours": 11,
     "fullDescription": "Gain foundational knowledge in cybersecurity including threat modeling, encryption, authentication, and secure coding practices. This course is essential for any developer or IT professional looking to understand how to defend applications and networks.",
-    "modules": ["Threat Types", "Encryption Basics", "Authentication", "Secure Development"]
+    "modules": ["Threat Types", "Encryption Basics", "Authentication", "Secure Development"],
+    "category": "Cybersecurity",
+    "instructor": "Brad Actor"
   },
   {
     "id": "10",
@@ -87,6 +105,8 @@
     "description": "Get started with the basics of cloud platforms and services.",
     "hours": 13,
     "fullDescription": "This introductory course covers the fundamental concepts of cloud computing including IaaS, PaaS, and SaaS models, as well as deployment strategies like public, private, and hybrid cloud. Learn about major providers like AWS, Azure, and Google Cloud, and understand how to architect basic cloud-based solutions.",
-    "modules": ["Cloud Models", "Virtualisation", "AWS vs Azure vs GCP", "Cloud Architecture Basics"]
+    "modules": ["Cloud Models", "Virtualisation", "AWS vs Azure vs GCP", "Cloud Architecture Basics"],
+    "instructor": "Colin Cloud",
+    "category": "Cloud Computing"
   }  
 ]
